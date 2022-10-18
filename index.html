@@ -1,29 +1,65 @@
 <!DOCTYPE html>
-<style>
-  div#intro {
-    background-color: rgb(163, 143, 116);
-    text-align: center;
-  }
-</style>
 <html>
-  <head>
-    <title>My Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  </head>
-  <body>
-    <div id="intro">
-      <h2>Hello there,</h2>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <h2>Hello there,</h2>
+  </div>
+  <div class="middle">
       <h1>This is <strong>Vishnu Priya</strong></h1>
       <h3>
-        Welcome to my page ,Are you intrested to know about the page please
-        click this!!!
+        Welcome to my page 
       </h3>
-    </div>
-    <div>
-      <h3>Know more about me!</h3>
-      <a href="/martialartgame/project.html"> Click here to checkout my project</a>
-    </div>
-  </body>
+  </div>
+  <div class="bottomleft">
+    <button>
+        <a href="/martialartgame/project.html"> check this out --></a>
+      </button>
+  </div>
+</div>
+
+</body>
 </html>
